@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trig Music Oscilloscope</title>
+  <title>Sine Wave Generator & Oscilloscope</title>
   <style>
     :root {
       --panel: #111827;
@@ -879,8 +879,10 @@
           continue;
         }
         if ((char === '
-' || char === '') && !inQuotes) {
-          if (char === '' && next === '
+' || char === '
+') && !inQuotes) {
+          if (char === '
+' && next === '
 ') i += 1;
           row.push(cell);
           rows.push(row);
