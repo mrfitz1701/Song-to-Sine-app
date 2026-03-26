@@ -789,8 +789,10 @@
         }
         if (char === ',' && !inQuotes) { row.push(cell); cell = ''; continue; }
         if ((char === '
-' || char === '') && !inQuotes) {
-          if (char === '' && next === '
+' || char === '
+') && !inQuotes) {
+          if (char === '
+' && next === '
 ') i += 1;
           row.push(cell); rows.push(row); row = []; cell = ''; continue;
         }
